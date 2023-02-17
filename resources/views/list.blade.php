@@ -81,7 +81,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    1209
+                    0100
                 </div>
 
                 <div class="links">
@@ -94,11 +94,11 @@
                         </tr>
                     </thead>
                     <tbody>
-                    @foreach ($juice as $juice)
+                    @foreach ($articles as $juice)
                         <tr>
-                            <td>{{ $juice->id }}</td>
-                            <td>{{ $juice->title }}</td>
-                            <td>{{ $juice->url }}</td>
+                            <td>{{ $articles->id }}</td>
+                            <td>{{ $articles->title }}</td>
+                            <td>{{ $articles->url }}</td>
                         </tr>source ~/.zshrc
 
                     @endforeach

@@ -7,8 +7,23 @@ use App\Models\Article;
 use App\Http\Requests\ArticleRequest;
 use Illuminate\Support\Facades\DB;
 
-class ArticleController extends Controller
-{
+class ArticleController extends Controller 
+{   
+    /**
+     * ブログ一覧を表示する
+     * 
+     * @return view
+     */
+    @return view 
+    public function showlist()
+    {
+        return view('list');
+    }
+
+}
+
+
+/* {
     public function showList() {
         // インスタンス生成
         $model = new Article();
@@ -37,4 +52,5 @@ class ArticleController extends Controller
         // 処理が完了したらregistにリダイレクト
         return redirect(route('regist'));
     }
+    */
 }
